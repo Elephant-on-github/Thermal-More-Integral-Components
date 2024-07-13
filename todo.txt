@@ -2,3 +2,4 @@
 -fix textures
 -make more
 -add recipes
+-find out why you can put more than one in a machine
