@@ -8,7 +8,7 @@ import net.minecraftforge.common.data.LanguageProvider;
 public class ExtraLangGen extends LanguageProvider {
 
     public ExtraLangGen(PackOutput gen) {
-        super(gen, ThermalMore.ThermalMoreItems, "en_us");
+        super(gen, ThermalMore.MOD_ID, "en_us");
     }
 
     @Override

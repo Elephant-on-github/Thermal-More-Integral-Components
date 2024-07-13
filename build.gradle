@@ -4,8 +4,8 @@ plugins {
 }
 
 version = mod_version
-group = 'mrthomas20121.thermal_extra'
-archivesBaseName = 'ThermalExtra'
+group = 'elephant_dev.thermal_more'
+archivesBaseName = 'ThermalMore'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -130,12 +130,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-            "Specification-Title": "ThermalExtra",
-            "Specification-Vendor": "Mrthomas20121",
+            "Specification-Title": "ThermalMore",
+            "Specification-Vendor": "Elephant_dev",
             "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,
             "Implementation-Version": project.version,
-            "Implementation-Vendor" : "thermal_extra",
+            "Implementation-Vendor" : "thermal_more",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

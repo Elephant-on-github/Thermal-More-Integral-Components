@@ -1,13 +1,10 @@
 package Elephant_dev.thermal_more.init;
 
 import Elephant_dev.thermal_more.item.UpgradeAugmentItem;
-import cofh.core.common.item.BlockItemCoFH;
 import cofh.core.common.item.CountedItem;
 import cofh.core.common.item.ItemCoFH;
 import cofh.core.util.helpers.AugmentDataHelper;
 import cofh.lib.util.DeferredRegisterCoFH;
-import cofh.thermal.lib.common.item.AugmentItem;
-import cofh.thermal.lib.common.item.BlockItemAugmentable;
 import net.minecraft.ChatFormatting;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -18,11 +15,12 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-import static cofh.lib.util.constants.NBTTags.*;
-import static cofh.thermal.lib.util.ThermalAugmentRules.*;
+import static cofh.lib.util.constants.NBTTags.TAG_AUGMENT_BASE_MOD;
+import static cofh.lib.util.constants.NBTTags.TAG_AUGMENT_TYPE_UPGRADE;
+import static cofh.thermal.lib.util.ThermalAugmentRules.flagUniqueAugment;
 
-@Mod.EventBusSubscriber(modid = Elephant_dev.thermal_more.ThermalMore, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class ThermalMoreItems {
+@Mod.EventBusSubscriber(modid = Elephant_dev.thermal_more.ThermalMore.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+public final class ThermalMoreItems {
 
     public static DeferredRegisterCoFH<Item> ITEMS = DeferredRegisterCoFH.create(ForgeRegistries.ITEMS, Elephant_dev.thermal_more.ThermalMore.MOD_ID);
 
@@ -40,7 +38,6 @@ public class ThermalMoreItems {
 
     public static void augmentFlags() {
         flagUniqueAugment(ITEMS.get("integral_augment"));
-        flagUniqueAugment(ITEMS.get("av_item_filter_augment"));
     }
 
     public static Supplier<ItemCoFH> item(Consumer<Item.Properties> consumer) {
@@ -50,7 +47,7 @@ public class ThermalMoreItems {
     public static Supplier<ItemCoFH> item(Consumer<Item.Properties> consumer, boolean count) {
         Item.Properties props = new Item.Properties();
         consumer.accept(props);
-        if(count) {
+        if (count) {
             return () -> new CountedItem(props);
         }
         return () -> new ItemCoFH(props);
