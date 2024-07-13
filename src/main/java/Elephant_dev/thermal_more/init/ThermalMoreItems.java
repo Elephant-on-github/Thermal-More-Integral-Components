@@ -17,17 +17,12 @@ import java.util.function.Supplier;
 
 import static cofh.lib.util.constants.NBTTags.TAG_AUGMENT_BASE_MOD;
 import static cofh.lib.util.constants.NBTTags.TAG_AUGMENT_TYPE_UPGRADE;
-import static cofh.thermal.lib.util.ThermalAugmentRules.flagUniqueAugment;
 
 @Mod.EventBusSubscriber(modid = Elephant_dev.thermal_more.ThermalMore.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public final class ThermalMoreItems {
 
     public static DeferredRegisterCoFH<Item> ITEMS = DeferredRegisterCoFH.create(ForgeRegistries.ITEMS, Elephant_dev.thermal_more.ThermalMore.MOD_ID);
 
-    public static Rarity yellow = Rarity.UNCOMMON;
-    public static Rarity dark_aqua = Rarity.create("extra_dark_aqua", style -> style.withColor(ChatFormatting.DARK_AQUA));
-    public static Rarity dark_purple = Rarity.create("extra_dark_purple", style -> style.withColor(ChatFormatting.DARK_PURPLE));
-    public static Rarity red = Rarity.create("extra_red", style -> style.withColor(ChatFormatting.RED));
     public static Rarity blue = Rarity.create("extra_blue", style -> style.withColor(ChatFormatting.BLUE));
     // augments
     public static final RegistryObject<ItemCoFH> integral_component = ITEMS.register("upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(blue),
@@ -35,10 +30,6 @@ public final class ThermalMoreItems {
                     .type(TAG_AUGMENT_TYPE_UPGRADE)
                     .mod(TAG_AUGMENT_BASE_MOD, 6F)
                     .build()));
-
-    public static void augmentFlags() {
-        flagUniqueAugment(ITEMS.get("integral_augment"));
-    }
 
     public static Supplier<ItemCoFH> item(Consumer<Item.Properties> consumer) {
         return item(consumer, false);

@@ -4,18 +4,18 @@ license = "MIT License"
 issueTrackerURL = "https://github.com/Mrthomas20121/ThermalExtra/issues"
 
 [[mods]]
-modId = "thermal_extra"
+modId = "thermal_more"
 version = "3.0.9-1.20.1"
-displayName = "Thermal Extra"
-displayURL = "https://www.curseforge.com/minecraft/mc-mods/thermal_extra"
+displayName = "Thermal More"
+displayURL = "example.org"
 #logoFile="tinkers_reforged_logo.png"
-credits = "Team CoFH"
-authors = "Mrthomas20121"
+credits = "Team CoFH, Mrthomas20121"
+authors = "Elephant_dev"
 description = '''
-Add more augments to Thermal
+Adds more integral components to Thermal
 '''
 
-[[dependencies.thermal_extra]]
+[[dependencies.thermal_more]]
     modId = "minecraft"
     mandatory = true
     versionRange = "[1.20.1,)"
