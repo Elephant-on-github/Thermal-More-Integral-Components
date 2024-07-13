@@ -1,0 +1,4 @@
+-fix lang 
+-fix textures
+-make more
+-add recipes
