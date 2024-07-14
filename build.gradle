@@ -80,14 +80,8 @@ repositories {
     maven { // TOP
         url 'https://maven.tterrag.com/'
     }
-    maven { // JEI and Tinkers
-        url 'https://dvs1.progwml6.com/files/maven/'
-    }
     maven { // Patchouli
         url 'https://maven.blamejared.com/'
-    }
-    maven { // Curios
-        url 'https://maven.theillusivec4.top/'
     }
     maven {
         name "cf"
@@ -100,14 +94,6 @@ repositories {
 
 dependencies {
     minecraft "net.neoforged:forge:${mc_version}-${neoforge_version}"
-
-    // compile against the JEI API but do not include it at runtime
-    compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
-    compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
-
-    // at runtime, use the full JEI
-    runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-common:${jei_version}")
-    runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
 
     compileOnly fg.deobf("vazkii.patchouli:Patchouli:${patchouli_version}:api")
     runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${patchouli_version}")
