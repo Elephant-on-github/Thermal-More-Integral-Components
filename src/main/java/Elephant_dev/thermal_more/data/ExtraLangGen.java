@@ -14,7 +14,8 @@ public class ExtraLangGen extends LanguageProvider {
     @Override
     protected void addTranslations() {
        // augments
-        addItem(ThermalMoreItems.integral_component, "Draconic Integral Component");
+        addItem(ThermalMoreItems.integral_component_15, "Draconic Integral Component");
+
         add("thermal_extra.augment.upgrade", "Improves base attributes. Other augments may be more effective as a result.");
     }
 }

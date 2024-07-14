@@ -25,10 +25,50 @@ public final class ThermalMoreItems {
 
     public static Rarity blue = Rarity.create("extra_blue", style -> style.withColor(ChatFormatting.BLUE));
     // augments
-    public static final RegistryObject<ItemCoFH> integral_component = ITEMS.register("upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(blue),
+    public static final RegistryObject<ItemCoFH> integral_component_15 = ITEMS.register("15x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(blue),
             AugmentDataHelper.builder()
                     .type(TAG_AUGMENT_TYPE_UPGRADE)
-                    .mod(TAG_AUGMENT_BASE_MOD, 6F)
+                    .mod(TAG_AUGMENT_BASE_MOD, 15F)
+                    .build()));
+    public static final RegistryObject<ItemCoFH> integral_component_20 = ITEMS.register("20x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(blue),
+            AugmentDataHelper.builder()
+                    .type(TAG_AUGMENT_TYPE_UPGRADE)
+                    .mod(TAG_AUGMENT_BASE_MOD, 20F)
+                    .build()));
+    public static final RegistryObject<ItemCoFH> integral_component_25 = ITEMS.register("25x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(blue),
+            AugmentDataHelper.builder()
+                    .type(TAG_AUGMENT_TYPE_UPGRADE)
+                    .mod(TAG_AUGMENT_BASE_MOD, 25F)
+                    .build()));
+    public static final RegistryObject<ItemCoFH> integral_component_30 = ITEMS.register("30x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(blue),
+            AugmentDataHelper.builder()
+                    .type(TAG_AUGMENT_TYPE_UPGRADE)
+                    .mod(TAG_AUGMENT_BASE_MOD, 30F)
+                    .build()));
+    public static final RegistryObject<ItemCoFH> integral_component_35 = ITEMS.register("35x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(blue),
+            AugmentDataHelper.builder()
+                    .type(TAG_AUGMENT_TYPE_UPGRADE)
+                    .mod(TAG_AUGMENT_BASE_MOD, 35F)
+                    .build()));
+    public static final RegistryObject<ItemCoFH> integral_component_40 = ITEMS.register("40x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(blue),
+            AugmentDataHelper.builder()
+                    .type(TAG_AUGMENT_TYPE_UPGRADE)
+                    .mod(TAG_AUGMENT_BASE_MOD, 40F)
+                    .build()));
+    public static final RegistryObject<ItemCoFH> integral_component_45 = ITEMS.register("45x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(blue),
+            AugmentDataHelper.builder()
+                    .type(TAG_AUGMENT_TYPE_UPGRADE)
+                    .mod(TAG_AUGMENT_BASE_MOD, 45F)
+                    .build()));
+    public static final RegistryObject<ItemCoFH> integral_component_50 = ITEMS.register("mega_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(blue),
+            AugmentDataHelper.builder()
+                    .type(TAG_AUGMENT_TYPE_UPGRADE)
+                    .mod(TAG_AUGMENT_BASE_MOD, 50F)
+                    .build()));
+    public static final RegistryObject<ItemCoFH> integral_component_100 = ITEMS.register("super_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(blue),
+            AugmentDataHelper.builder()
+                    .type(TAG_AUGMENT_TYPE_UPGRADE)
+                    .mod(TAG_AUGMENT_BASE_MOD, 100F)
                     .build()));
 
     public static Supplier<ItemCoFH> item(Consumer<Item.Properties> consumer) {
