@@ -24,7 +24,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                thermal_extra {
+                thermal_more {
                     source sourceSets.main
                 }
             }
@@ -41,7 +41,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                thermal_extra {
+                thermal_more {
                     source sourceSets.main
                 }
             }
@@ -57,10 +57,10 @@ minecraft {
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
-            args '--mod', 'thermal_extra', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'thermal_more', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                thermal_extra {
+                thermal_more {
                     source sourceSets.main
                 }
             }
