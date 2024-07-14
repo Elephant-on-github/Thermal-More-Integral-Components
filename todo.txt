@@ -1,5 +1,6 @@
 -fix lang ✅
--fix textures
+-fix textures ✅
 -make more ✅
 -add recipes ❎
 -find out why you can put more than one in a machine
+-replace banner
