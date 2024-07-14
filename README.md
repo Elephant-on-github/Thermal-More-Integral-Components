@@ -1,2 +1,4 @@
-# Thermal Extra
-Add new Augments and Other Stuff to Thermal Serie.
+# Thermal: More Integral Components
+Adds many more integral components without recipes
+
+for modpacks
