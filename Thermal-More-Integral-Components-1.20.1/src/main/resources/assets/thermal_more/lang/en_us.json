@@ -1,0 +1,13 @@
+{
+  "item.thermal_more.15x_upgrade_augment" : "Powerful Integral Component",
+  "item.thermal_more.20x_upgrade_augment" : "Mighty Integral Component",
+  "item.thermal_more.25x_upgrade_augment" : "Powerful Integral Component +",
+  "item.thermal_more.30x_upgrade_augment" : "Mighty Integral Component +",
+  "item.thermal_more.35x_upgrade_augment" : "Powerful Integral Component Max",
+  "item.thermal_more.40x_upgrade_augment" : "Mighty Integral Component Max",
+  "item.thermal_more.45x_upgrade_augment" : "Super Powerful Integral Component ",
+  "item.thermal_more.mega_upgrade_augment" : "Mega Integral Component",
+  "item.thermal_more.super_upgrade_augment" : "Almost Creative Integral Component",
+  "creative_tab.thermal_more.augments" : "More Integral Components",
+  "thermal_more.augment.upgrade" : "Slightly OP Integral Component"
+}
