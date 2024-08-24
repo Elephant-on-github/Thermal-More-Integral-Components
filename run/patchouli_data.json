@@ -1,0 +1,16 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "thermal:guidebook": {
+      "viewedEntries": [
+        "thermal:technology/slot_seal",
+        "thermal:technology/65_items",
+        "thermal:technology/devices/potion_diffuser",
+        "thermal:technology/devices/xp_condenser"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
+}

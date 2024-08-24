@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[40,)"
 license = "MIT License"
-issueTrackerURL = "https://github.com/Mrthomas20121/ThermalExtra/issues"
+issueTrackerURL = "https://github.com/Elephant-on-github/Thermal-More-Integral-Components/issues"
 
 [[mods]]
 modId = "thermal_more"
