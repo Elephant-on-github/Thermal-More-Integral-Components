@@ -7,10 +7,10 @@
   ],
   "key": {
     "d": {
-      "tag": "thermal:diamond_gear"
+      "item": "thermal:diamond_gear"
     },
     "i": {
-      "item": "thermal_upgrade_augment_3"
+      "item": "thermal:upgrade_augment_3"
     },
     "p": {
       "item": "minecraft:pink_dye"
@@ -19,7 +19,7 @@
       "item": "minecraft:purple_dye"
     },
     "c": {
-      "item": "thermal_upgrade_augment_2"
+      "item": "thermal:upgrade_augment_2"
     }
   },
   "result": {
