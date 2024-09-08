@@ -5,9 +5,8 @@ issueTrackerURL = "https://github.com/Elephant-on-github/Thermal-More-Integral-C
 
 [[mods]]
 modId = "thermal_more"
-version = "3.0.9-1.20.1"
+version = "1.1.0-1.20.1"
 displayName = "Thermal More"
-displayURL = "example.org"
 #logoFile="tinkers_reforged_logo.png"
 credits = "Team CoFH, Mrthomas20121"
 authors = "Elephant_dev"
