@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ppp",
+    "lnl",
+    "dnd"
+  ],
+  "key": {
+    "d": {
+      "tag": "thermal:diamond_gear"
+    },
+    "p": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "l": {
+      "item": "thermal_more:15x_upgrade_augment"
+    },
+    "n": {
+      "item": "thermal:netherite_gear"
+    }
+  },
+  "result": {
+    "item": "thermal_more:30x_upgrade_augment"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ppp",
+    "nin",
+    "nIn"
+  ],
+  "key": {
+    "i": {
+      "item": "thermal_more:20x_upgrade_augment"
+    },
+    "p": {
+      "item": "minecraft:yellow_dye"
+    },
+    "I": {
+      "item": "thermal_more:30x_upgrade_augment"
+    },
+    "n": {
+      "item": "thermal:netherite_gear"
+    }
+  },
+  "result": {
+    "item": "thermal_more:50x_upgrade_augment"
+  }
+}

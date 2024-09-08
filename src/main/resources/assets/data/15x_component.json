@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "dpd",
+    "iii",
+    "iPi"
+  ],
+  "key": {
+    "d": {
+      "tag": "thermal:diamond_gear"
+    },
+    "i": {
+      "item": "thermal_upgrade_augment_2"
+    },
+    "p": {
+      "item": "minecraft:pink_dye"
+    },
+    "P": {
+      "item": "minecraft:purple_dye"
+    }
+  },
+  "result": {
+    "item": "thermal_more:15x_upgrade_augment"
+  }
+}
