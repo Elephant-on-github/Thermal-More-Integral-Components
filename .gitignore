@@ -1,0 +1,20 @@
+# Minecraft mod specific
+/run/
+/logs/
+/.gradle/
+/build/
+
+# IntelliJ IDEA
+/.idea/
+*.iml
+*.ipr
+*.iws
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Temporary files
+*~
