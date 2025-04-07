@@ -1,14 +1,13 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        maven {
-            name = 'NeoForged'
-            url = 'https://maven.neoforged.net/releases'
-        }
+        maven { url = 'https://maven.minecraftforge.net/' }
         maven { url = 'https://maven.parchmentmc.org' }
     }
 
     plugins {
+        id 'net.minecraftforge.gradle' version '5.1.+'
+        id 'org.parchmentmc.librarian.forgegradle' version '1.+'
         id 'org.gradle.toolchains.foojay-resolver-convention' version '0.5.0'
     }
 }

@@ -1,8 +1,8 @@
 package Elephant_dev.thermal_more.init;
 
 import Elephant_dev.thermal_more.item.UpgradeAugmentItem;
-import cofh.core.common.item.CountedItem;
-import cofh.core.common.item.ItemCoFH;
+import cofh.core.item.CountedItem;
+import cofh.core.item.ItemCoFH;
 import cofh.core.util.helpers.AugmentDataHelper;
 import cofh.lib.util.DeferredRegisterCoFH;
 import net.minecraft.ChatFormatting;
@@ -30,47 +30,47 @@ public final class ThermalMoreItems {
     public static Rarity red = Rarity.create("extra_red", style -> style.withColor(ChatFormatting.RED));
     // public static Rarity blue = Rarity.create("extra_blue", style -> style.withColor(ChatFormatting.BLUE));
     // augments
-    public static final RegistryObject<ItemCoFH> integral_component_15 = ITEMS.register("15x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(red),
+    public static final RegistryObject<ItemCoFH> integral_component_15 = ITEMS.register("15x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(red).tab(ThermalMoreCreativeTabs.Augment_Tab),
             AugmentDataHelper.builder()
                     .type(TAG_AUGMENT_TYPE_UPGRADE)
                     .mod(TAG_AUGMENT_BASE_MOD, 15F)
                     .build()));
-    public static final RegistryObject<ItemCoFH> integral_component_20 = ITEMS.register("20x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(red),
+    public static final RegistryObject<ItemCoFH> integral_component_20 = ITEMS.register("20x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(red).tab(ThermalMoreCreativeTabs.Augment_Tab),
             AugmentDataHelper.builder()
                     .type(TAG_AUGMENT_TYPE_UPGRADE)
                     .mod(TAG_AUGMENT_BASE_MOD, 20F)
                     .build()));
-    public static final RegistryObject<ItemCoFH> integral_component_25 = ITEMS.register("25x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(yellow),
+    public static final RegistryObject<ItemCoFH> integral_component_25 = ITEMS.register("25x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(yellow).tab(ThermalMoreCreativeTabs.Augment_Tab),
             AugmentDataHelper.builder()
                     .type(TAG_AUGMENT_TYPE_UPGRADE)
                     .mod(TAG_AUGMENT_BASE_MOD, 25F)
                     .build()));
-    public static final RegistryObject<ItemCoFH> integral_component_30 = ITEMS.register("30x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(yellow),
+    public static final RegistryObject<ItemCoFH> integral_component_30 = ITEMS.register("30x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(yellow).tab(ThermalMoreCreativeTabs.Augment_Tab),
             AugmentDataHelper.builder()
                     .type(TAG_AUGMENT_TYPE_UPGRADE)
                     .mod(TAG_AUGMENT_BASE_MOD, 30F)
                     .build()));
-    public static final RegistryObject<ItemCoFH> integral_component_35 = ITEMS.register("35x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(dark_aqua),
+    public static final RegistryObject<ItemCoFH> integral_component_35 = ITEMS.register("35x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(dark_aqua).tab(ThermalMoreCreativeTabs.Augment_Tab),
             AugmentDataHelper.builder()
                     .type(TAG_AUGMENT_TYPE_UPGRADE)
                     .mod(TAG_AUGMENT_BASE_MOD, 35F)
                     .build()));
-    public static final RegistryObject<ItemCoFH> integral_component_40 = ITEMS.register("40x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(dark_aqua),
+    public static final RegistryObject<ItemCoFH> integral_component_40 = ITEMS.register("40x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(dark_aqua).tab(ThermalMoreCreativeTabs.Augment_Tab),
             AugmentDataHelper.builder()
                     .type(TAG_AUGMENT_TYPE_UPGRADE)
                     .mod(TAG_AUGMENT_BASE_MOD, 40F)
                     .build()));
-    public static final RegistryObject<ItemCoFH> integral_component_45 = ITEMS.register("45x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(dark_purple),
+    public static final RegistryObject<ItemCoFH> integral_component_45 = ITEMS.register("45x_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(dark_purple).tab(ThermalMoreCreativeTabs.Augment_Tab),
             AugmentDataHelper.builder()
                     .type(TAG_AUGMENT_TYPE_UPGRADE)
                     .mod(TAG_AUGMENT_BASE_MOD, 45F)
                     .build()));
-    public static final RegistryObject<ItemCoFH> integral_component_50 = ITEMS.register("mega_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(dark_purple),
+    public static final RegistryObject<ItemCoFH> integral_component_50 = ITEMS.register("mega_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(dark_purple).tab(ThermalMoreCreativeTabs.Augment_Tab),
             AugmentDataHelper.builder()
                     .type(TAG_AUGMENT_TYPE_UPGRADE)
                     .mod(TAG_AUGMENT_BASE_MOD, 50F)
                     .build()));
-    public static final RegistryObject<ItemCoFH> integral_component_100 = ITEMS.register("super_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(epic),
+    public static final RegistryObject<ItemCoFH> integral_component_100 = ITEMS.register("super_upgrade_augment", () -> new UpgradeAugmentItem(new Item.Properties().rarity(epic).tab(ThermalMoreCreativeTabs.Augment_Tab),
             AugmentDataHelper.builder()
                     .type(TAG_AUGMENT_TYPE_UPGRADE)
                     .mod(TAG_AUGMENT_BASE_MOD, 100F)

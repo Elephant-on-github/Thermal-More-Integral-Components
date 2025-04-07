@@ -8,6 +8,6 @@
   "item.thermal_more.45x_upgrade_augment" : "Super Powerful Integral Component ",
   "item.thermal_more.mega_upgrade_augment" : "Mega Integral Component",
   "item.thermal_more.super_upgrade_augment" : "Almost Creative Integral Component",
-  "creative_tab.thermal_more.augments" : "More Integral Components",
+  "itemGroup.augment_tab": "More Integral Components",
   "thermal_more.augment.upgrade" : "Slightly OP Integral Component"
 }

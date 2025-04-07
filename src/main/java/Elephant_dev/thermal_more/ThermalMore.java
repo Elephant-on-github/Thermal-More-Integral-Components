@@ -1,9 +1,10 @@
 package Elephant_dev.thermal_more;
 
-import Elephant_dev.thermal_more.init.ThermalMoreCreativeTabs;
 import Elephant_dev.thermal_more.init.ThermalMoreItems;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(Elephant_dev.thermal_more.ThermalMore.MOD_ID)
@@ -13,8 +14,17 @@ public class ThermalMore {
 	public static final String MOD_ID = "thermal_more";
 
 	public ThermalMore() {
-		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		ThermalMoreItems.ITEMS.register(bus);
-		ThermalMoreCreativeTabs.CREATIVE_TABS.register(bus);
+		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		ThermalMoreItems.ITEMS.register(modEventBus);
+
+		modEventBus.addListener(this::commonSetup);
+
+		MinecraftForge.EVENT_BUS.register(this);
 	}
+
+	private void commonSetup(final FMLCommonSetupEvent event) {
+
+	}
+
 }
